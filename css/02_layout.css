@@ -1,0 +1,123 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    "header     header      header      header"
+    "banner     banner      banner      banner"
+    "about      about       about       about"
+    "team       team        team        team"
+    "business   business    business    business"
+    "gallery    gallery     gallery     gallery"
+    "skills     skills      skills      skills"
+    "price      price       price       price"
+    "contact    contact     contact     contact"
+    "footer     footer      footer      footer"
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+    background-color: #01010f;
+    border-bottom: 1px solid white;
+}
+
+.banner{
+    min-height: 800px;
+    grid-area: banner;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)), url(../imagens/after.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: about;
+}
+
+.we-know{
+    display: flex;
+    grid-area: we-know;
+    background-color: #e7e6e6;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.we-know__left{
+    margin: 150px 0 50px 50px;
+}
+
+.we-know__right{
+    margin: 150px 50px 150px 0;
+}
+
+.team{
+    grid-area: team;
+    background-color: white;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.business_data{
+    grid-area: business;
+    display: flex;
+    background-color: #3d3c3c;
+    min-height: 200px;
+    max-height: 100vh;
+    width: 100%;
+    font-family: 'Raleway',sans-serif;
+    justify-content: space-around;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.gallery{
+    grid-area: gallery;
+    max-width: 100%;
+    overflow: hidden;
+    font-family: 'Raleway',sans-serif;
+    margin-bottom: 100px;
+}
+
+.skills{
+    display: flex;
+    grid-area: skills;
+    background-color: #f1f1f1;
+}
+
+.price{
+    grid-area: price;
+    background-color: #616161;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.contact{
+    grid-area: contact;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+}
+
+.footer{
+    grid-area: footer;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
